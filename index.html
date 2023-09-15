@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        ul.gray {
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+
+        ul.horizontal {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        ul.gray li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.gray li a:hover {
+            color: white;
+            background-color: #1b2629;
+        }
+
+
+        .home-page {
+            height: 600px;
+            margin: 20px;
+            background-image: url(images/chiang-mai.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 100% 60%;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .home-page p {
+            color: #ffffffc3;
+            font-size: 7rem;
+            -webkit-text-stroke: 1px #676767b9;
+        }
+
+        .destination-list {
+            height: 400px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            max-width: 100vw;
+            color: black;
+        }
+
+        .destinations-div {
+            border: 1px solid #ff0000;
+            border-radius: 1rem;
+            margin: 50px;
+            width: 22%;
+        }
+
+        .destinations {
+            border: 1px solid #e4e3e3;
+            border-radius: 1rem;
+            margin: 50px;
+            width: 22%;
+            cursor: pointer;
+        }
+
+        img {
+            height: 80%;
+            width: 100%;
+            border-bottom: 1px solid #e4e3e3;
+            border-radius: 1rem 1rem 0 0;
+        }
+        .destinations:hover{
+            box-shadow: 0 0 11px rgba(33,33,33,.2); 
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="horizontal gray">
+        <li><a href="#">Home</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+    <div class="home-page">
+        <p>Alberta Vacation Company</p>
+    </div>
+    <div class="destination-list">
+        <div class="destinations">
+            <img src="images/bangkok-buddha-statue.jpg" alt="bangkok-buddha-statue">
+            <p style="text-align: center;font-size: large;">Bangkok</p>
+        </div>
+        <div class="destinations">
+            <img src="images/phiphi-island.jpg" alt="phiphi-island">
+            <p style="text-align: center;font-size: large;">Phuket</p>
+        </div>
+    </div>
+
+</body>
+
+<footer style="float: right;padding: 7px 6px;">
+    &copy; Sorawat Tanthikun 2023
+</footer>
+
+</html>
